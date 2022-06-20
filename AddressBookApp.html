@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../CSS/AddressBookStyleSheet.css">
         <title>Address Book App</title>
     </head>
+    //----------------UC1------------------/  
     <body>
         <header class="header-content header">
             <div class="logo-content">
@@ -18,6 +19,7 @@
                 </div>
             </div>
         </header>
+    //----------------UC2------------------/  
         <div class="form-content">
             <form class="form">
             <div class="form-head">Person Address Form
@@ -25,6 +27,49 @@
                     <img src="../Assets/211652_close_icon.png" alt="">
                 </a>
             </div>
+     //----------------UC3------------------/  
+            <div class="row-content">
+                <input class="input" type="text" id="text" name="text" placeholder="Full Name" required>
+                <error-output class="text-error" for="text"></error-output>
+            </div>
+            <div class="row-content">
+                <input class="input" type="text" id="name" name="name" placeholder="Address" required>
+            </div>
+            <div class="row-content">
+                <div>
+                    <select name="city" id="city" >
+                    <option value="1">Select City</option>
+                    <option value="2">Chennai</option>
+                    <option value="3">Madurai</option>
+                    <option value="4">Trichy</option>
+                    <option value="5">Perambalur</option>
+                    <option value="6">Tenkasi</option>
+                    <option value="7">Villupuram</option>
+                    <option value="8">Erode</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="state" id="state">
+                    <option value="1">Select State</option>
+                    <option value="2">Andhra</option>
+                    <option value="3">Karnataka</option>
+                    <option value="4">Mumbai</option>
+                    <option value="5">Delhi</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="input" type="text" id="name" name="name" placeholder="Zip" required>
+                </div>
+            </div>
+            <div class="row-content">
+                    <input class="input" type="text" id="name" name="name" placeholder="Phone Number" required>
+                </div>
+                <div class="buttonParent">
+                    <div class="submit-reset">
+                        <button type="submit" class="button addButton" id="addButton">Add</button>
+                        <button type="reset" class="resetButton button" id="resetButton">Reset</button>
+                    </div>
+                </div>
             </form>
         </div>
     </body>
